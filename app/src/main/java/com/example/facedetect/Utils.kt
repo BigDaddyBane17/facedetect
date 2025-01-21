@@ -4,6 +4,7 @@ import android.content.res.Configuration
 import android.graphics.Rect
 import android.graphics.RectF
 import androidx.camera.core.CameraSelector
+import com.example.facedetect.facedrawing.Overlay
 import kotlin.math.ceil
 
 object Utils {

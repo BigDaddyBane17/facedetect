@@ -1,4 +1,4 @@
-package com.example.facedetect
+package com.example.facedetect.facedrawing
 
 import android.content.Context
 import android.graphics.Canvas

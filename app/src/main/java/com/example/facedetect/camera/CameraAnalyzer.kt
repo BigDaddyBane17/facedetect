@@ -1,6 +1,8 @@
-package com.example.facedetect
+package com.example.facedetect.camera
 
 import android.graphics.Rect
+import com.example.facedetect.facedrawing.Overlay
+import com.example.facedetect.facedrawing.RectangleOverlay
 
 import com.google.android.gms.tasks.Task
 import com.google.mlkit.vision.common.InputImage

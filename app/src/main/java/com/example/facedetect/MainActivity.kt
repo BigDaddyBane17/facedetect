@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.facedetect.camera.Camera
 import com.example.facedetect.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

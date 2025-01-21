@@ -1,10 +1,11 @@
-package com.example.facedetect
+package com.example.facedetect.camera
 
 import android.graphics.Rect
 import androidx.annotation.OptIn
 import androidx.camera.core.ExperimentalGetImage
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageProxy
+import com.example.facedetect.facedrawing.Overlay
 import com.google.android.gms.tasks.Task
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.face.Face
@@ -12,7 +13,6 @@ import com.google.mlkit.vision.face.Face
 abstract class AbstractCameraAnalyzer<T : List<Face>> : ImageAnalysis.Analyzer {
 
     abstract val graphicOverlay: Overlay<*>
-
 
     @OptIn(ExperimentalGetImage::class)
     override fun analyze(imageProxy: ImageProxy) {
@@ -37,6 +37,5 @@ abstract class AbstractCameraAnalyzer<T : List<Face>> : ImageAnalysis.Analyzer {
         graphicOverlay: Overlay<*>,
         rect: Rect
     )
-
 
 }

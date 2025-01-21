@@ -1,9 +1,10 @@
-package com.example.facedetect
+package com.example.facedetect.facedrawing
 
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
+import com.example.facedetect.Utils
 import com.google.mlkit.vision.face.Face
 
 class RectangleOverlay(
@@ -14,9 +15,9 @@ class RectangleOverlay(
     private val boxPaint = Paint()
 
     init {
-        boxPaint.color = Color.WHITE
+        boxPaint.color = Color.GREEN
         boxPaint.style = Paint.Style.STROKE
-        boxPaint.strokeWidth = 3.0F
+        boxPaint.strokeWidth = 4.0F
     }
 
     override fun draw(canvas: Canvas) {
